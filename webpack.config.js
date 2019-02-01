@@ -25,13 +25,13 @@ let config = {
       filename: 'index.html',
       minify: false
     }),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src/profile.html'),
-      // inject: 'body',
-      chunks: ['index'],
-      filename: 'profile.html',
-      minify: false
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: path.resolve(__dirname, 'src/profile.html'),
+    //   // inject: 'body',
+    //   chunks: ['index'],
+    //   filename: 'profile.html',
+    //   minify: false
+    // }),
     new MiniCssExtractPlugin({
       filename: 'styles.css'
     }),
