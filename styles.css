@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/*
+ * Color variables
+ */
+/*
+ * Material Design Theme
+ */
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0; }
+
+.text--center {
+  text-align: center; }
+
+.text--uppercase {
+  text-transform: uppercase; }
+
+.font--light {
+  font-weight: 300; }
+
+.font-family--raleway {
+  font-family: 'Raleway', sans-serif; }
+
+:root, html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; }
+
+body div {
+  box-sizing: border-box; }
+
+.content {
+  margin: 16px; }
+
+.grid {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+  -ms-grid-rows: 100px 64px auto 112px;
+  grid-template-rows: 100px 64px auto 112px; }
+
+.section__headline {
+  font-family: Raleway, sans-serif;
+  margin-bottom: 8px; }
+
+/*
+ * Topp app bar section
+ */
+.grid > .section__top {
+  -ms-grid-row: 1;
+  grid-row: 1; }
+
+.top-app-bar {
+  height: 100px;
+  display: flex;
+  flex-flow: row;
+  background-color: #EEEEEE;
+  padding: 16px; }
+
+.top-app-bar__title {
+  flex: initial;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-out; }
+
+/*
+ * Navigation section
+ */
+.grid > .section__navigation {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: flex;
+  flex-flow: row;
+  background-color: #E5E5E5;
+  padding: 16px;
+  align-items: center;
+  border-bottom: 3px solid #47b562; }
+
+.grid > .section__navigation > div {
+  flex: auto;
+  -ms-grid-row-align: center;
+      align-self: center; }
+
+/*
+ * Footer section
+ */
+.section__footer {
+  background-color: #E5E5E5;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding: 32px; }
+
+.section__footer .footer__left {
+  flex: initial;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center; }
+
+.section__footer .footer__right {
+  flex: auto;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-end; }
+
+/*
+ * Responsive properties
+ */
+@media only screen and (max-width: 479px) {
+  .grid {
+    -ms-grid-rows: 100px auto 300px auto;
+    grid-template-rows: 100px auto 300px auto; }
+  .top-app-bar__title {
+    flex: auto; }
+  .grid > .section__navigation {
+    flex-flow: column; }
+  .section__footer {
+    flex-flow: column; }
+  .section__footer .footer__right > p {
+    font-size: 10px; } }
+
