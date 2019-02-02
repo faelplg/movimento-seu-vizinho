@@ -33,6 +33,13 @@ h1, h2, h3, h4, h5 {
 body div {
   box-sizing: border-box; }
 
+a, a:visited {
+  text-decoration: none;
+  color: #2e8f46; }
+
+a:hover {
+  color: #47b562; }
+
 .content {
   margin: 16px; }
 
@@ -42,8 +49,8 @@ body div {
   display: grid;
   -ms-grid-columns: auto;
   grid-template-columns: auto;
-  -ms-grid-rows: 100px 64px auto 112px;
-  grid-template-rows: 100px 64px auto 112px; }
+  -ms-grid-rows: 100px 64px auto 85px 112px;
+  grid-template-rows: 100px 64px auto 85px 112px; }
 
 .section__headline {
   font-family: Raleway, sans-serif;
@@ -88,6 +95,16 @@ body div {
   flex: auto;
   -ms-grid-row-align: center;
       align-self: center; }
+
+/*
+ * Footer art
+ */
+.section__art {
+  background-image: url(assets/images/footerImg.jpeg);
+  background-repeat: repeat-x;
+  max-height: 85px;
+  display: flex;
+  flex-flow: row; }
 
 /*
  * Footer section
