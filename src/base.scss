@@ -10,6 +10,14 @@ body div {
   box-sizing: border-box;
 }
 
+a, a:visited {
+  text-decoration: none;
+  color: $primary-color-hue2;
+}
+a:hover {
+  color: $primary-color;
+}
+
 .content {
   margin: 16px;
 }
@@ -18,7 +26,7 @@ body div {
   height: 100%;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 100px 64px auto 112px;
+  grid-template-rows: 100px 64px auto 85px 112px;
 }
 .section__headline {
   font-family: Raleway, sans-serif;
@@ -62,6 +70,18 @@ body div {
   flex: auto;
   align-self: center;
 }
+
+/*
+ * Footer art
+ */
+.section__art {
+  background-image: url("./assets/images/footerImg.jpeg");
+  background-repeat: repeat-x;
+  max-height: 85px;
+  display: flex;
+  flex-flow: row;
+}
+
 /*
  * Footer section
  */
