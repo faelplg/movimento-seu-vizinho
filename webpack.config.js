@@ -66,7 +66,7 @@ let config = {
       loaders: [{
         loader: 'file-loader',
         options: {
-          name: 'assets/images/[name].[ext]'
+          name: 'theme/images/[name].[ext]'
         }
       }]
     }]

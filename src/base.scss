@@ -137,10 +137,15 @@ a:hover {
   // display: flex;
   // flex-flow: column;
   // background-color: $secondary-color-hue2;
-  background: url('/theme/images/cover_seu_vizinho.jpg');
+  background: url('./theme/images/cover_seu_vizinho.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media only screen and (max-width: 767px) {
+  .cover {
+    height: 450px;
+  }
 }
 
 /*
