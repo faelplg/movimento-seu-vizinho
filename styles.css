@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Dokdo|Love+Ya+Like+A+Sister|Nanum+Pen+Script|Rock+Salt);
 /*
  * Color variables
  */
@@ -13,6 +14,11 @@
 h1, h2, h3, h4, h5 {
   margin: 0; }
 
+p {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  text-align: justify; }
+
 .text--center {
   text-align: center; }
 
@@ -25,13 +31,41 @@ h1, h2, h3, h4, h5 {
 .font-family--raleway {
   font-family: 'Raleway', sans-serif; }
 
+.font-family--rock-salt {
+  font-family: 'Rock Salt', cursive; }
+
+.grid {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+  -ms-grid-rows: -webkit-min-content -webkit-min-content auto -webkit-min-content 85px;
+  -ms-grid-rows: min-content min-content auto min-content 85px;
+  grid-template-rows: -webkit-min-content -webkit-min-content auto -webkit-min-content 85px;
+  grid-template-rows: min-content min-content auto min-content 85px; }
+
+@media only screen and (max-width: 767px) {
+  .grid {
+    -ms-grid-rows: 72px -webkit-min-content auto -webkit-min-content 85px;
+    -ms-grid-rows: 72px min-content auto min-content 85px;
+    grid-template-rows: 72px -webkit-min-content auto -webkit-min-content 85px;
+    grid-template-rows: 72px min-content auto min-content 85px; } }
+
+/*
+ * Base styles
+ */
 :root, html, body {
   height: 100%;
   margin: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #FAFAFA; }
 
-body div {
+body, div, section {
   box-sizing: border-box; }
+
+body {
+  overflow-y: auto; }
 
 a, a:visited {
   text-decoration: none;
@@ -41,63 +75,152 @@ a:hover {
   color: #47b562; }
 
 .content {
-  margin: 16px; }
+  margin: 48px; }
 
-.grid {
-  height: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto;
-  grid-template-columns: auto;
-  -ms-grid-rows: 100px 64px auto 85px 112px;
-  grid-template-rows: 100px 64px auto 85px 112px; }
-
-.section__headline {
-  font-family: Raleway, sans-serif;
-  margin-bottom: 8px; }
+@media only screen and (max-width: 767px) {
+  .content {
+    margin: 16px; } }
 
 /*
- * Topp app bar section
+ * Header section
  */
-.grid > .section__top {
-  -ms-grid-row: 1;
-  grid-row: 1; }
+.section__header {
+  border-bottom: 3px solid #47b562;
+  background-color: white; }
 
-.top-app-bar {
-  height: 100px;
+/** Social bar */
+.header__social {
+  height: 72px;
   display: flex;
   flex-flow: row;
-  background-color: #EEEEEE;
-  padding: 16px; }
+  padding: 0 16px; }
 
-.top-app-bar__title {
-  flex: initial;
+.header__social--left {
+  flex: auto;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
+  flex-flow: row;
   align-items: center;
   transition: all 1s ease-out; }
 
-/*
- * Navigation section
- */
-.grid > .section__navigation {
-  -ms-grid-row: 2;
-  grid-row: 2;
+@media only screen and (max-width: 767px) {
+  .header__social--left {
+    justify-content: center; } }
+
+.header__social--right {
+  flex: initial;
   display: flex;
   flex-flow: row;
-  background-color: #E5E5E5;
-  padding: 16px;
   align-items: center;
-  border-bottom: 3px solid #47b562; }
+  transition: all 1s ease-out; }
 
-.grid > .section__navigation > div {
-  flex: auto;
-  -ms-grid-row-align: center;
-      align-self: center; }
+@media only screen and (max-width: 767px) {
+  .header__social--right {
+    display: none; } }
+
+/** Social bar elements */
+#main__logo {
+  transition: all 1s ease-out;
+  width: 60px; }
+
+@media only screen and (max-width: 767px) {
+  #main__logo {
+    margin: 0;
+    width: 60px; } }
+
+.main__title {
+  margin-left: 16px;
+  display: flex;
+  flex-flow: column; }
+
+@media only screen and (max-width: 767px) {
+  .main__title {
+    display: none; } }
+
+.media__logo {
+  margin: 0 4px; }
+
+/** Navigation bar */
+.header__navigation {
+  display: flex;
+  height: auto;
+  flex-flow: row;
+  padding: 8px 80px 8px;
+  background-color: #EEEEEE; }
+
+@media only screen and (max-width: 767px) {
+  .header__navigation {
+    display: none; } }
+
+.header__navigation > div {
+  flex: initial;
+  margin: 0 16px; }
+
+.header__navigation a,
+.header__navigation a:visited {
+  font-size: 14px;
+  color: black; }
+
+.header__navigation a:hover {
+  color: #8c5300; }
 
 /*
- * Footer art
+ * Section cover
+ */
+.section__cover {
+  border-bottom: 3px solid #ffa726; }
+
+.cover {
+  height: 450px;
+  background: url("/theme/images/cover_seu_vizinho.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/*
+ * Section footer
+ */
+.section__footer {
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  padding: 32px 8px 8px; }
+
+.footer__top {
+  flex: auto;
+  display: flex;
+  flex-flow: row;
+  align-items: center; }
+
+.footer__bot {
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center; }
+
+.section__footer .footer__left {
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+
+.section__footer .footer__mid {
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+
+.section__footer .footer__right {
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+
+.section__footer p {
+  margin: 4px 0; }
+
+/*
+ * Section art
  */
 .section__art {
   background-image: url(assets/images/footerImg.jpeg);
@@ -105,44 +228,4 @@ a:hover {
   max-height: 85px;
   display: flex;
   flex-flow: row; }
-
-/*
- * Footer section
- */
-.section__footer {
-  background-color: #E5E5E5;
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  padding: 32px; }
-
-.section__footer .footer__left {
-  flex: initial;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center; }
-
-.section__footer .footer__right {
-  flex: auto;
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: flex-end; }
-
-/*
- * Responsive properties
- */
-@media only screen and (max-width: 479px) {
-  .grid {
-    -ms-grid-rows: 100px auto 300px auto;
-    grid-template-rows: 100px auto 300px auto; }
-  .top-app-bar__title {
-    flex: auto; }
-  .grid > .section__navigation {
-    flex-flow: column; }
-  .section__footer {
-    flex-flow: column; }
-  .section__footer .footer__right > p {
-    font-size: 10px; } }
 

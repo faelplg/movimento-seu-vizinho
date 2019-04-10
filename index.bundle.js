@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "8218d85fcb1814ab58a1";
+/******/ 	var hotCurrentHash = "a1149ad15a23122526e3";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -799,14 +799,14 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _base_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _base_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_base_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _assets_images_footerImg_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var _assets_images_footerImg_jpeg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_images_footerImg_jpeg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _theme_images_footerImg_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _theme_images_footerImg_jpeg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_theme_images_footerImg_jpeg__WEBPACK_IMPORTED_MODULE_1__);
 
 
 /* eslint-disable no-console */
 
 console.log('This is a gift from @faelplg.');
-console.log('footer', _assets_images_footerImg_jpeg__WEBPACK_IMPORTED_MODULE_1___default.a);
+console.log('footer', _theme_images_footerImg_jpeg__WEBPACK_IMPORTED_MODULE_1___default.a);
 /* eslint-enable no-console */
 
 /***/ }),

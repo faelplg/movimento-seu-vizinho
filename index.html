@@ -12,38 +12,84 @@
   <link href="styles.css" rel="stylesheet"></head>
   <body>
     <div class="grid">
-      <div class="section__top">
-        <div class="top-app-bar">
-          <div class="top-app-bar__title">
-            <h3 class="mdc-theme--primary mdc-typography--overline" style="font-size:16px; margin-top:-6px;">Movimento</h3>
-            <h1 class="mdc-typography--headline5 font--light mdc-theme--on-secondary font-family--raleway"><strong>Seu Vizinho</strong></h1>
+      <section class="section__header">
+        <nav class="header__social">
+          <div class="header__social--left">
+            <img id="main__logo" src="assets/images/logo_seu_vizinho.png" alt="Logomarca do Bloco Seu Vizinho">
+            <div class="main__title">
+              <h3 class="text--uppercase font-family--rock-salt">Seu Vizinho</h3>
+            </div>
           </div>
+          <div class="header__social--right">
+            <a href="https://www.facebook.com/blocoseuvizinho/" target="_blank">
+              <img class="media__logo" src="assets/images/icon_facebook.svg" alt="Facebook logo">
+            </a>
+            <a href="https://www.instagram.com/oblocoseuvizinho" target="_blank">
+              <img class="media__logo" src="assets/images/icon_instagram.svg" alt="Facebook logo">
+            </a>
+            <a href="https://www.youtube.com/channel/UCymhbtl1iKKvwU0vJH2Y8Sg" target="_blank">
+              <img class="media__logo" src="assets/images/icon_youtube.svg" alt="Facebook logo">
+            </a>
+            <!-- <img class="media__logo" src="./theme/images/icon_whatsapp.svg" alt="Facebook logo"> -->
+          </div>
+        </nav>
+        <!-- <nav class="header__navigation">
+          <div class="text--uppercase"><a href="#">Link 1</a></div>
+          <div class="text--uppercase"><a href="#">Link 2</a></div>
+          <div class="text--uppercase"><a href="#">Link 3</a></div>
+          <div class="text--uppercase"><a href="#">Link 4</a></div>
+          <div class="text--uppercase"><a href="#">Link 5</a></div>
+          <div class="text--uppercase"><a href="#">Link 6</a></div>
+        </nav> -->
+      </section>
+      <section class="section__cover">
+        <div class="cover">
+          <!-- <img class="cover" src="./theme/images/cover_seu_vizinho.jpg" alt="Facebook logo"> -->
         </div>
-      </div>
-      <div class="section__navigation">
-        <div class="text--center"><a class="mdc-typography--button" href="#">Projetos</a></div>
-        <div class="text--center"><a class="mdc-typography--button" href="#">Eventos</a></div>
-        <div class="text--center"><a class="mdc-typography--button" href="#">Loja</a></div>
-        <div class="text--center"><a class="mdc-typography--button" href="#">O morro</a></div>
-        <div class="text--center"><a class="mdc-typography--button" href="#">O barraco</a></div>
-        <div class="text--center"><a class="mdc-typography--button" href="#">Contato</a></div>
-      </div>
-      <div class="section__content">
+      </section>
+      <section class="section__content">
         <div class="content">
-          <h1>Conteúdo</h1>
+          <h1 class="font-family--rock-salt">Nossa história</h1>
+          <p>
+            O SEU VIZINHO surgiu na Vila Marçola, no Aglomerado da Serra, como um bloco de carnaval pra contornar algumas das várias faltas de acesso que ainda rolam na nossa comunidade: falta de acesso à alegria do carnaval, ao entretenimento, à cultura, ao direito de ir e vir, à geração de renda, ao direito de ter tempo livre para se divertir, remexer ‘e rebolar como quiser, sem ser desrespeitadx e sem desrespeitar ninguém, é óbvio!
+          </p>
+          <p>
+            E como a gente bota a cara, o que começou como carnaval e folia, virou um movimento muito maior!
+          </p>
+          <p>
+            Hoje, o SEU VIZINHO, com festa, sorriso na cara e seriedade ao mesmo tempo, é uma Escola de Artes Livre e Periférica com foco em música e produção cultural. Desenvolve oficinas artístico-culturais gratuitas que empoderam crianças, jovens, adultos e idosos; faz apresentações no morro, espalhadas por BH e em outras cidades; produz eventos na quebrada e em outros bairros; fomenta a economia local e gera renda pra comunidade e promove a cultura e os artistas locais.
+          </p>
         </div>
-      </div>
-      <div class="section__art">
-
-      </div>
-      <div class="section__footer">
-        <div class="footer__left">
-          <h1 class="mdc-typography--subtitle1 font--light font-family--raleway"><strong>Seu Vizinho</strong></h1>
+      </section>
+      <section class="section__footer">
+        <div class="footer__top">
+          <!-- <div class="footer__left">
+            <h4 class="font-family--rock-salt">Sobre</h4>
+            <p>Aglomerado da Serra</p>
+            <p>Belo Horizonte / MG</p>
+            <p><a href="mailto:projetoseuvizinho@gmail.com">projetoseuvizinho@gmail.com</a></p>
+          </div> -->
+          <div class="footer__mid">
+            <h4 class="font-family--rock-salt">Seu Vizinho</h4>
+            <p>Aglomerado da Serra</p>
+            <p>Belo Horizonte / MG</p>
+            <p><a href="mailto:projetoseuvizinho@gmail.com">projetoseuvizinho@gmail.com</a></p>
+            <p>--</p>
+          </div>
+          <!-- <div class="footer__right">
+            <p><a href="">Link 1</a></p>
+            <p><a href="">Link 1</a></p>
+            <p><a href="">Link 1</a></p>
+            <p><a href="">Link 1</a></p>
+          </div> -->
         </div>
-        <div class="footer__right">
-          <p class="mdc-typography--overline">&copy; Todos os direitos reservados</p>
+        <div class="footer__bot">
+          <p>É mais que um bloco de carnaval.</p>
+          <p>É uma Escola de Artes Livre e Periférica com foco em música e produção cultural.</p>
+          <p>&copy; Todos os direitos reservados</p>
         </div>
-      </div>
+      </section>
+      <section class="section__art"></section>
     </div>
   <script type="text/javascript" src="index.bundle.js"></script></body>
 </html>
