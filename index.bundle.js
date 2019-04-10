@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "75f39770da8befbf34d4";
+/******/ 	var hotCurrentHash = "ac7c9e2964a984f3ee14";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -823,13 +823,13 @@ console.log('cover', _theme_images_cover_seu_vizinho_jpg__WEBPACK_IMPORTED_MODUL
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/footerImg.jpeg";
+module.exports = __webpack_require__.p + "theme/images/footerImg.jpeg";
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/cover_seu_vizinho.jpg";
+module.exports = __webpack_require__.p + "theme/images/cover_seu_vizinho.jpg";
 
 /***/ })
 /******/ ]);

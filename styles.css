@@ -171,10 +171,14 @@ a:hover {
 
 .cover {
   height: 550px;
-  background: url("/theme/images/cover_seu_vizinho.jpg");
+  background: url(theme/images/cover_seu_vizinho.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
+
+@media only screen and (max-width: 767px) {
+  .cover {
+    height: 450px; } }
 
 /*
  * Section footer
@@ -223,7 +227,7 @@ a:hover {
  * Section art
  */
 .section__art {
-  background-image: url(assets/images/footerImg.jpeg);
+  background-image: url(theme/images/footerImg.jpeg);
   background-repeat: repeat-x;
   max-height: 85px;
   display: flex;
