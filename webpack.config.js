@@ -62,7 +62,7 @@ let config = {
         'html-loader'
       ]
     },{
-      test: /\.(jpeg|png|gif|svg)$/i,
+      test: /\.(jpeg|jpg|png|gif|svg)$/i,
       loaders: [{
         loader: 'file-loader',
         options: {

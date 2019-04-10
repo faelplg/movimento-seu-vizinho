@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "NODE_ENV=development webpack-dashboard -- webpack-dev-server --hot --inline --mode development",
+    "serve:windows": "webpack-dashboard -- webpack-dev-server --hot --inline --mode development",
     "build:test": "NODE_ENV=test webpack --mode none",
     "build:production": "NODE_ENV=production webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"

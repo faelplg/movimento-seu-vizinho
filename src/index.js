@@ -1,5 +1,5 @@
 import './base.scss';
-import footer from './assets/images/footerImg.jpeg';
+import footer from './theme/images/footerImg.jpeg';
 
 /* eslint-disable no-console */
 console.log('This is a gift from @faelplg.');
